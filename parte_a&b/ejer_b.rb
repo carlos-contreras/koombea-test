@@ -7,7 +7,7 @@ File.readlines(name_of_file).each do |line|
 		tmp << line[i].downcase
 	end
 	key = tmp.sort.join.to_sym
-	unless dictionary.has_key? (key)
+	unless dictionary.has_key?(key)
 		dictionary[key] = Array.new
 	end
 	dictionary[key] << line.chomp
