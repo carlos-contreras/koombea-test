@@ -9,9 +9,10 @@ About The part_a&b: (Developed using Ruby 2.1.2)
 
 - They both are basically the same algorithm, I just changed the output to the screen on each one according to the original problem statement, so as you can see on the 'ejer_a.rb' file there are and extra function to handle the printing to the screen.
 
-- First I read line by line of the input file to be able to use the input on runtime
+- First I read line by line of the input file to be able to use the input on runtime.
 
-- The aproach to solve this two problems was to take each word, sort the letters in ascending order, to solve that first part of the problem each word is parsed to become an array where each element is a single letter, then using the function  sort from the Ruby Array Classit get sorted and joined again as string, that string is parsed to a symbol and the symbol is used as key for a Hash, that means that any other word of phrase with the same letters on it will be recognized as an anagram of any one found before and they are being push into an array to track which are anagrams and which are ananagrams.	
+- The aproach to solve this two problems was to take each word, sort the letters in ascending order, to solve that first part of the problem each word is parsed to become an array where each element is a single letter, then using the function  sort from the Ruby Array Classit get sorted and joined again as string, that string is parsed to a symbol and the symbol is used as key for a Hash, that means that any other word of phrase with the same letters on it will be recognized as an anagram of any one found before and they are being push into an array to track which are anagrams and which are ananagrams.
+
 --
 
 About the webapp: (Developed using Ruby 2.1.2, Rails 4.1.4, take a look at the Gemfile)
@@ -28,7 +29,7 @@ About the webapp: (Developed using Ruby 2.1.2, Rails 4.1.4, take a look at the G
 
 - I used the rails_admiin, device, cancan, bootstrap-sass and valid_email gems in order to reach the goal in a timed manner.
 
-- The administration site is on /admin, and the default user is admin@example.com - password: 12345678
+- The administration site is on /admin, and the default user is admin@example.com - password: 12345678.
 
 - In order to run the app, first executle 'bunlde install', then execute rake 'db:migrate', then execute 'rake db:seed' to load the default database and finally use 'rails server', the webapp will be deployed to '127.0.0.1:3000'
 
