@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+
+  config.excluded_models << "Admin"
   config.main_app_name = ["Koombea test"]
   ### Popular gems integration
 

@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 puts 'Loading the initial type of rules...'
-RuleType.create( name: 'Specific', description: "Using this kind of rule you are inntended to select a winner when she/he subscribe in a specific position, you can specify many numbers")
-RuleType.create( name: 'Multiple', description: "Using this kind of rule you are inntended to select a winner when she/he subscribe in a position that is multiple of a number, you can specify just one multiple and you can add the 'after' clause to set a minimun range wich need to be achieve before the first clause will apply")
-RuleType.create( name: 'Probability', description: "Using this kind of rule you are inntended to set a specific number of winners within a range but the positions will be randomly selected, you have to use the 'range' clause to set the numbers for the specific range")
+RuleType.create( name: 'Specific', description: "Using this rule rule you will set that the winners will be those visitors who subscribe on the specific positions that you just typed")
+RuleType.create( name: 'Multiple', description: "Using this type of rule you will set up a winner each time a user reach a number in the subscription order where that number is multiple of the number or numbers you just typed")
+RuleType.create( name: 'Probability', description: "Using this type of rule you'll set a specific probability of selection for the winners, the number you input in the numbers text box will be taken as divisor of 1, then your visitors will have one possibility, in that number you just typed of win a prize on the site after they subscribe.")
 puts 'Loading the initial prizes...'
 Prize.create( name: 'Free Month', description: "Later on you will get a code in your email, with a free of charge month on the monthy fee of the site", quantity: 20)
 Prize.create( name: 'Free Tickets', description: "Later on you will get a code in your email, with a free of charge within the country AirLine ticket", quantity: 10)
