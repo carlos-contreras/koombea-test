@@ -13,8 +13,10 @@ RuleType.create( name: 'Probability', description: "Using this type of rule you'
 puts 'Loading the initial prizes...'
 Prize.create( name: 'Free Month', description: "Later on you will get a code in your email, with a free of charge month on the monthy fee of the site", quantity: 20)
 Prize.create( name: 'Free Tickets', description: "Later on you will get a code in your email, with a free of charge within the country AirLine ticket", quantity: 10)
+Prize.create( name: 'Free Diner', description: "Later on you will get a cupon in your email for a free dinner on McDonalds ", quantity: 20)
 puts 'Loading the initial rules...'
 Rule.create( numbers: "2,4,6,7,8,10", after: 3, before: 7, prize: Prize.find(1), rule_type: RuleType.find(1))
 Rule.create( numbers: "2,10", after: 3, before: 25, prize: Prize.find(2), rule_type: RuleType.find(2))
+Rule.create( numbers: "3", after: 3, before: 25, prize: Prize.find(2), rule_type: RuleType.find(3))
 puts 'Loading the default admin account...'
 Admin.create(email: 'admin@example.com', password: '12345678')
