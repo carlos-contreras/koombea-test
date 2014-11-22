@@ -1,11 +1,3 @@
-def echo(stuff)
-	line = String.new
-	stuff.each do |word|
-		line << " #{word},"
-	end
-	puts line.chop.strip
-end
-
 dictionary = Hash.new
 name_of_file = 'wl1.txt'
 
@@ -25,7 +17,7 @@ count = 0
 
 dictionary.each do |key, item|
 	if item.length == 1
-		echo(item)
+		puts item
 		count += 1
 	end
 end
