@@ -1,0 +1,30 @@
+<% if notice %>
+	<div class="alert alert-success" role="alert"> <%= flash[:notice] %> </div>
+<% end %>
+<% if flash[:alert] %> 
+	<div class="alert alert-danger" role="alert"> <%= flash[:alert] %> </div>
+<% end %>
+
+<div class="jumbotron">
+	<h1>Company name</h1>
+	<hr>
+	<p>
+		This is a great opportunity, subscribe to our newsletter and become	one of our winners, we have  
+		<strong> <%= Prize.sum(:quantity) %> prices </strong> 
+		waiting for you, Yeah! is that easy!
+	</p>
+		<ul>
+			<li> There are no tricks. </li>
+			<li> When you subscribe you will be notified immediately. </li>
+			<li> Remember to apply in a daily basis. </li>
+			<li> You just have to type your email and click the subscribe button. </li>
+		</ul>
+	
+	<p> Don't let go your chance to win, subscribe now! </p>
+
+	<%= form_tag subscription_path, class: "form-inline", :method => 'post' do %>
+		<%= text_field_tag 'email', nil, class: "form-control" %> 
+		<%= submit_tag "Subscribe", name: nil, class: "btn btn-primary" %>
+	<% end %>
+	
+</div>

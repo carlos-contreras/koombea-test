@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: prizes
+#
+#  id          :integer          not null, primary key
+#  name        :string(255)
+#  description :text
+#  quantity    :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  quantity: 1
+
+two:
+  name: MyString
+  description: MyText
+  quantity: 1

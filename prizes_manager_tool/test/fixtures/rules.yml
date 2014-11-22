@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: rules
+#
+#  id           :integer          not null, primary key
+#  numbers      :string(255)
+#  before       :integer
+#  after        :integer
+#  prize_id     :integer
+#  created_at   :datetime
+#  updated_at   :datetime
+#  rule_type_id :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  prize_id: 
+
+two:
+  description: MyText
+  prize_id: 

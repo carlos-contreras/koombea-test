@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.form-inline .form-control {
+  width: 400px;
+}

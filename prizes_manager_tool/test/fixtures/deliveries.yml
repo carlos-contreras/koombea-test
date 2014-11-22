@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: deliveries
+#
+#  id            :integer          not null, primary key
+#  subscriber_id :integer
+#  prize_id      :integer
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  suscriber_id: 
+  prize_id: 
+
+two:
+  suscriber_id: 
+  prize_id: 

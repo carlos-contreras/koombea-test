@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: subscribers
+#
+#  id         :integer          not null, primary key
+#  email      :string(255)
+#  ticket_num :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  ticket_num: 1
+
+two:
+  email: MyString
+  ticket_num: 1
