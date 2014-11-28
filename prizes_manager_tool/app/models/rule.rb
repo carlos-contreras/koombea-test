@@ -26,7 +26,7 @@ class Rule < ActiveRecord::Base
 
   def range_in_beetwen
     if self.before < self.after
-      errors.add(:before, "Can't be greater that ->safter")
+      errors.add(:before, "Can't be greater that -> after")
     end
   end
 
@@ -37,7 +37,7 @@ class Rule < ActiveRecord::Base
   end
 
   def parse_numbers
-    if self.numbers.nil? or self.numbers.empty?
+    if self.numbers.nil? || self.numbers.empty?
       return nil
     else
       array = Array.new
@@ -55,20 +55,20 @@ class Rule < ActiveRecord::Base
   def does_the_rule_match_against?(position)
     case self.rule_type_id
     when 1 then
-      if self.parse_numbers.include?(position) and position < self.before and position > self.after
+      if self.parse_numbers.include?(position) && (position < self.before) && (position > self.after)
         return true
       else
         return false
       end
     when 2 then
       self.parse_numbers.each do |i|
-        if position%i == 0 and position < self.before and position > self.after
+        if position%i == 0 && (position < self.before) && (position > self.after)
           return true
         end
       end
       return false
     when 3 then
-      if rand < (1.0/self.parse_numbers[0].to_f) and position < self.before and position > self.after
+      if rand < (1.0/self.parse_numbers[0].to_f) && (position < self.before) && (position > self.after)
         return true
       else
         return false
